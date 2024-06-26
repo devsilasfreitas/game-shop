@@ -1,0 +1,170 @@
+:root {
+    --background-color: #ededed;
+    --background-color-secondary: #ddd;
+    --text-color: #000;
+    --border-color: #000;
+    --text-color-secondary: #444;
+    --primary-color: #007bff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    border-bottom-color: var(--text-color-secondary);
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 1px solid var(--primary-color);
+    transition: 0.5s background-color;
+}
+
+.button:hover {
+    background-color: transparent;
+}
+
+.link {
+    color: var(--primary-color);
+}
+
+.card {
+    background-color: var(--background-color-secondary);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    transition: 0.5s transform, 0.5s box-shadow;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--border-color);
+}
+
+.card-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--text-color);
+}
+
+.dropdown-content {
+    background-color: var(--background-color-secondary);
+}
+
+.dropdown-content a {
+    color: var(--text-color);
+}
+
+.dropdown-content a:hover { 
+    background-color: var(--text-color-secondary);
+}
+
+.option {
+    color: var(--text-color);
+    font-weight: bold;
+    background-color: var(--background-color-secondary);
+}
+
+.option:hover {
+    background-color: var(--background-color);
+}
+
+.danger {
+    color: red;
+}
+
+.request {
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.request > h3 {
+    border-bottom: 1px solid var(--border-color);
+    margin: -10px;
+    padding: 10px;
+}
+
+.request > p {
+    line-height: 1rem;
+}
+
+.request > h4 {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.requestContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.button-danger {
+    background-color: red;
+    border-color: red;
+}
+
+.dialog {
+    background-color: var(--background-color-secondary);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+.favorite-icon {
+    stroke: var(--border-color);
+    stroke-width: 10px;
+}
+
+.logoContainer {
+    color: var(--text-color);
+}
+
+header > div > a > svg > path {
+    stroke: var(--text-color);
+}
+
+dialog > form > label > input {
+    color: var(--text-color);
+    background-color: var(--background-color-secondary);
+    border: 1px solid var(--border-color);
+}
+
+dialog > form > label {
+    color: var(--text-color-secondary)
+}
+
+.category-card {
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    transition: 0.5s background-color, 0.5s color;
+}
+
+.category-card:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.statistic-card {
+    color: var(--text-color);
+    background-color: var(--background-color-secondary);
+}
+
+.trashIcon {
+    fill: var(--text-color);
+}
+
+.trashIcon:hover {
+    fill: red;
+    cursor: pointer;
+}
+
+.edit-profile {
+    fill: var(--text-color);
+}
+
+.edit-profile:hover {
+    fill: var(--primary-color);
+    cursor: pointer;
+}
